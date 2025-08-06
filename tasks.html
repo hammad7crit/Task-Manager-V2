@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        body {
+            font-family: "Outfit";
+        }
+    </style>
+</head>
+<body class="w-full h-screen flex flex-col bg-gray-900 text-white">
+    <div class="w-full h-[50%] flex flex-col justify-center p-5 gap-3">
+        <h1 class="font-bold text-2xl">Add a new task</h1>
+        <input type="text" class="bg-transparent border border-purple-600 rounded-3xl w-[75%] h-[20%] pl-3 tasknameMain">
+        <h1 class="font-bold text-2xl">Description</h1>
+        <textarea rows="5" class="resize-none bg-transparent border border-purple-600 rounded-3xl w-[75%] p-3 taskdescMain"></textarea>
+    </div>
+    <div class="w-[75%] flex justify-end">
+        <button class="bg-gradient-to-b from-purple-600 to-purple-900 hover:from-purple-700 hover:to-purple-900 text-white font-[15px] px-6 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0px_2px_4px_rgba(0,0,0,0.4)] bg-opacity-70 font-bold flex justify-center items-center w-[15%] createButton">Create</button>
+    </div>
+    <div class="w-full h-full taskContainer">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
