@@ -51,15 +51,36 @@ createButton.addEventListener("click", () => {
     taskDiv.appendChild(actionsDiv);
 
     let taskCompletion = document.createElement("i");
-    taskCompletion.classList.add("fa-solid", "fa-check", "bg-gradient-to-b", "from-green-300", "to-green-600" ,"px-8", "py-4", "rounded-2xl", "flex" , "justify-center", "items-center", "cursor-pointer", "hover:scale-110", "transition-all", "duration-300");
+    taskCompletion.classList.add("fa-solid", "fa-check",
+  "bg-gradient-to-b", "from-orange-300", "to-orange-600",
+  "w-10", "h-10", "sm:w-12", "sm:h-12", // ensures square
+  "text-sm", "sm:text-base",
+  "rounded-xl",
+  "flex", "justify-center", "items-center",
+  "cursor-pointer", "hover:scale-110",
+  "transition-all", "duration-300");
     actionsDiv.appendChild(taskCompletion);
 
     let taskDelete = document.createElement("i");
-    taskDelete.classList.add("fa-solid", "fa-trash", "bg-gradient-to-b", "from-red-300", "to-red-600" ,"px-8", "py-4", "rounded-2xl", "flex" , "justify-center", "items-center", "cursor-pointer", "hover:scale-110", "transition-all", "duration-300");
+    taskDelete.classList.add("fa-solid", "fa-trash",
+  "bg-gradient-to-b", "from-red-300", "to-red-600",
+  "w-10", "h-10", "sm:w-12", "sm:h-12", // ensures square
+  "text-sm", "sm:text-base",
+  "rounded-xl",
+  "flex", "justify-center", "items-center",
+  "cursor-pointer", "hover:scale-110",
+  "transition-all", "duration-300");
     actionsDiv.appendChild(taskDelete);
 
     let taskEdit = document.createElement("i");
-    taskEdit.classList.add("fa-solid", "fa-edit", "bg-gradient-to-b", "from-yellow-300", "to-yellow-600" ,"px-8", "py-4", "rounded-2xl", "flex" , "justify-center", "items-center", "cursor-pointer", "hover:scale-110", "transition-all", "duration-300");
+    taskEdit.classList.add("fa-solid", "fa-edit",
+  "bg-gradient-to-b", "from-yellow-300", "to-yellow-600",
+  "w-10", "h-10", "sm:w-12", "sm:h-12", // ensures square
+  "text-sm", "sm:text-base",
+  "rounded-xl",
+  "flex", "justify-center", "items-center",
+  "cursor-pointer", "hover:scale-110",
+  "transition-all", "duration-300");
     actionsDiv.appendChild(taskEdit);
 
     // ----- Actions
