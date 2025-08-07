@@ -1,12 +1,6 @@
 let createButton = document.querySelector(".createButton");
 let tasksContainer = document.querySelector(".taskContainer");
-tasksContainer.classList.add("flex",
-  "flex-col",              // 👈 stacks tasks vertically on small screens
-  "md:flex-row",           // 👈 row layout only on larger screens
-  "flex-wrap",             // wrap still applies
-  "gap-4",
-  "p-6",
-  "min-h-screen"  );
+tasksContainer.classList.add("flex","flex-col","gap-4","p-6","min-h-screen"  );
 
 createButton.addEventListener("click", () => {
     let tasknameMain = document.querySelector(".tasknameMain");
@@ -20,23 +14,7 @@ createButton.addEventListener("click", () => {
     }  
 
     let taskDiv = document.createElement("div");
-    taskDiv.classList.add("w-full", 
-    "md:w-[calc(50%-0.5rem)]", 
-    "h-auto",
-    "min-h-[300px]",
-    "border", 
-    "border-purple-600", 
-    "rounded-2xl", 
-    "flex", 
-    "flex-col", 
-    "justify-center", 
-    "gap-6",
-    "p-4",
-    "resize-none", 
-    "opacity-0", 
-    "transition-all", 
-    "duration-500", 
-    "ease-out", 
+    taskDiv.classList.add("w-full", "md:w-[calc(50%-0.5rem)]", "h-auto","min-h-[300px]","border", "border-purple-600", "rounded-2xl", "flex", "flex-col", "justify-center", "gap-6","p-4","resize-none", "opacity-0", "transition-all", "duration-500", "ease-out", 
     "translate-y-4"
 );
     tasksContainer.appendChild(taskDiv);
@@ -60,7 +38,7 @@ createButton.addEventListener("click", () => {
     "border-cyan-300", 
     "rounded-2xl", 
     "p-4",
-    "flex-grow", // Added to make it expand
+    "flex-grow", 
     "min-h-[100px]");
     taskDiv.appendChild(taskDescription);
 
@@ -69,36 +47,16 @@ createButton.addEventListener("click", () => {
     taskDiv.appendChild(actionsDiv);
 
     let taskCompletion = document.createElement("i");
-    taskCompletion.classList.add("fa-solid", "fa-check",
-  "bg-gradient-to-b", "from-orange-300", "to-orange-600",
-  "w-10", "h-10", "sm:w-12", "sm:h-12", 
-  "text-sm", "sm:text-base",
-  "rounded-xl",
-  "flex", "justify-center", "items-center",
-  "cursor-pointer", "hover:scale-110",
-  "transition-all", "duration-300");
+    taskCompletion.classList.add("fa-solid", "fa-check","bg-gradient-to-b", "from-orange-300", "to-orange-600","w-10", "h-10", "sm:w-12", "sm:h-12", "text-sm", "sm:text-base","rounded-xl","flex", "justify-center", "items-center","cursor-pointer", "hover:scale-110","transition-all", "duration-300");
     actionsDiv.appendChild(taskCompletion);
 
     let taskDelete = document.createElement("i");
-    taskDelete.classList.add("fa-solid", "fa-trash",
-  "bg-gradient-to-b", "from-red-300", "to-red-600",
-  "w-10", "h-10", "sm:w-12", "sm:h-12", 
-  "text-sm", "sm:text-base",
-  "rounded-xl",
-  "flex", "justify-center", "items-center",
-  "cursor-pointer", "hover:scale-110",
-  "transition-all", "duration-300");
+    taskDelete.classList.add("fa-solid", "fa-trash","bg-gradient-to-b", "from-red-300", "to-red-600","w-10", "h-10", "sm:w-12", "sm:h-12", "text-sm", "sm:text-base",
+    "rounded-xl","flex", "justify-center", "items-center","cursor-pointer", "hover:scale-110","transition-all", "duration-300");
     actionsDiv.appendChild(taskDelete);
 
     let taskEdit = document.createElement("i");
-    taskEdit.classList.add("fa-solid", "fa-edit",
-  "bg-gradient-to-b", "from-yellow-300", "to-yellow-600",
-  "w-10", "h-10", "sm:w-12", "sm:h-12", 
-  "text-sm", "sm:text-base",
-  "rounded-xl",
-  "flex", "justify-center", "items-center",
-  "cursor-pointer", "hover:scale-110",
-  "transition-all", "duration-300");
+    taskEdit.classList.add("fa-solid", "fa-edit","bg-gradient-to-b", "from-yellow-300", "to-yellow-600","w-10", "h-10", "sm:w-12", "sm:h-12", "text-sm", "sm:text-base","rounded-xl","flex", "justify-center", "items-center","cursor-pointer", "hover:scale-110","transition-all", "duration-300");
     actionsDiv.appendChild(taskEdit);
 
     taskCompletion.addEventListener("click", () => {
